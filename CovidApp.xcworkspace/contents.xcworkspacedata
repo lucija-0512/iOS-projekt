@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CovidApp/DataLayer/DataSources/CoreDataSource/Person+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/five/Desktop/Developer/projekt/iOS-vjestina-CovidApp/CovidApp/DataLayer/DataSources/CoreDataSource/ManagedModels/Person+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:CovidApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
