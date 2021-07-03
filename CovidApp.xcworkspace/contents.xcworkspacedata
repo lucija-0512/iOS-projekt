@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CovidApp/DataLayer/DataSources/CoreDataSource/Person+CoreDataClass.swift">
+      location = "group:/Users/five/Desktop/Developer/iOS-vjestina-CovidApp/CovidApp/DataLayer/DataSources/CoreDataSource/ManagedModels/Person+CoreDataProperties.swift">
    </FileRef>
    <FileRef
-      location = "group:/Users/five/Desktop/Developer/projekt/iOS-vjestina-CovidApp/CovidApp/DataLayer/DataSources/CoreDataSource/ManagedModels/Person+CoreDataProperties.swift">
+      location = "group:CovidApp/DataLayer/DataSources/CoreDataSource/Person+CoreDataClass.swift">
    </FileRef>
    <FileRef
       location = "group:CovidApp.xcodeproj">

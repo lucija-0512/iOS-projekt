@@ -51,12 +51,12 @@
 		52AA6D59268FBC9C005D40E7 /* VaccinationScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D58268FBC9C005D40E7 /* VaccinationScheduleViewController.swift */; };
 		52AA6D5B268FBCBE005D40E7 /* VaccinationScheduleDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D5A268FBCBE005D40E7 /* VaccinationScheduleDataPresenter.swift */; };
 		52AA6D5E268FBDBF005D40E7 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D5D268FBDBF005D40E7 /* Person+CoreDataClass.swift */; };
-		52AA6D60268FBDC1005D40E7 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D5F268FBDC1005D40E7 /* Person+CoreDataProperties.swift */; };
 		52AA6D62268FBDEE005D40E7 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D61268FBDEE005D40E7 /* PersonModel.swift */; };
 		52AA6D64268FBE0F005D40E7 /* PersonModel+CD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D63268FBE0F005D40E7 /* PersonModel+CD.swift */; };
 		52AA6D6826905E2C005D40E7 /* VaccinationApplicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D6726905E2C005D40E7 /* VaccinationApplicationsViewController.swift */; };
 		52AA6D6A26905FD0005D40E7 /* VaccinationApplicationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D6926905FD0005D40E7 /* VaccinationApplicationsPresenter.swift */; };
 		52AA6D6E26906744005D40E7 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D6D26906744005D40E7 /* ScheduleTableViewCell.swift */; };
+		52AA6D762690840B005D40E7 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA6D752690840B005D40E7 /* Person+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,12 +119,12 @@
 		52AA6D58268FBC9C005D40E7 /* VaccinationScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationScheduleViewController.swift; sourceTree = "<group>"; };
 		52AA6D5A268FBCBE005D40E7 /* VaccinationScheduleDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationScheduleDataPresenter.swift; sourceTree = "<group>"; };
 		52AA6D5D268FBDBF005D40E7 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataClass.swift"; path = "CovidApp/DataLayer/DataSources/CoreDataSource/Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		52AA6D5F268FBDC1005D40E7 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "/Users/five/Desktop/Developer/projekt/iOS-vjestina-CovidApp/CovidApp/DataLayer/DataSources/CoreDataSource/ManagedModels/Person+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		52AA6D61268FBDEE005D40E7 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		52AA6D63268FBE0F005D40E7 /* PersonModel+CD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonModel+CD.swift"; sourceTree = "<group>"; };
 		52AA6D6726905E2C005D40E7 /* VaccinationApplicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationApplicationsViewController.swift; sourceTree = "<group>"; };
 		52AA6D6926905FD0005D40E7 /* VaccinationApplicationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationApplicationsPresenter.swift; sourceTree = "<group>"; };
 		52AA6D6D26906744005D40E7 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		52AA6D752690840B005D40E7 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "/Users/five/Desktop/Developer/iOS-vjestina-CovidApp/CovidApp/DataLayer/DataSources/CoreDataSource/ManagedModels/Person+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		83F7A8672EE1CD330A6EDAA9 /* Pods_CovidApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96509D64A43267F12EF7B3AA /* Pods-CovidApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidApp.debug.xcconfig"; path = "Target Support Files/Pods-CovidApp/Pods-CovidApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -346,7 +346,7 @@
 		52AA6D5C268FBDB4005D40E7 /* ManagedModels */ = {
 			isa = PBXGroup;
 			children = (
-				52AA6D5F268FBDC1005D40E7 /* Person+CoreDataProperties.swift */,
+				52AA6D752690840B005D40E7 /* Person+CoreDataProperties.swift */,
 				52AA6D5D268FBDBF005D40E7 /* Person+CoreDataClass.swift */,
 			);
 			path = ManagedModels;
@@ -478,7 +478,6 @@
 				5243B80D266CEE4500F06D9D /* CoreDataStack.swift in Sources */,
 				5243B7FB266CE36400F06D9D /* CovidNetworkServiceProtocol.swift in Sources */,
 				4FD727D0267187150095471C /* TravelRestrictionsDataPresenter.swift in Sources */,
-				52AA6D60268FBDC1005D40E7 /* Person+CoreDataProperties.swift in Sources */,
 				52AA6D64268FBE0F005D40E7 /* PersonModel+CD.swift in Sources */,
 				52AA6D6E26906744005D40E7 /* ScheduleTableViewCell.swift in Sources */,
 				5243B802266CE3D300F06D9D /* CovidCoreDataSource.swift in Sources */,
@@ -510,6 +509,7 @@
 				5243B7EC266CE22300F06D9D /* CovidRepository.swift in Sources */,
 				4FD727A92670ED8A0095471C /* AppCoordinator.swift in Sources */,
 				5243B814266CFB8E00F06D9D /* WorldData.swift in Sources */,
+				52AA6D762690840B005D40E7 /* Person+CoreDataProperties.swift in Sources */,
 				4FD727C2267163FB0095471C /* WorldNewsDataViewModel.swift in Sources */,
 				52AA6D5E268FBDBF005D40E7 /* Person+CoreDataClass.swift in Sources */,
 				4FD727DC2672B8360095471C /* ArticleViewController.swift in Sources */,
