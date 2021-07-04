@@ -46,7 +46,7 @@ class CovidDataViewController: UIViewController {
         titleLabel.text = "Covid World Statistics"
         
         tableView = UITableView()
-        tableView.rowHeight = 100
+        tableView.rowHeight = 80
         tableView.register(CovidTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.isUserInteractionEnabled = true
         tableView.dataSource = self

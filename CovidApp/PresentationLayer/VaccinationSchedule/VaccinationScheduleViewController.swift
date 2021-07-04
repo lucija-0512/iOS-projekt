@@ -28,7 +28,56 @@ class VaccinationScheduleViewController: UIViewController {
         addConstraints()
     }
      
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(
+            withDuration: 1,
+            delay: 0,
+            options: .curveEaseOut,
+            animations: {
+                self.name.transform = .identity
+                self.name.alpha = 1
+            })
+        UIView.animate(
+            withDuration: 1,
+            delay: 0,
+            options: .curveEaseOut,
+            animations: {
+                self.surname.transform = .identity
+                self.surname.alpha = 1
+            }
+        )
+        UIView.animate(
+            withDuration: 1,
+            delay: 0,
+            options: .curveEaseOut,
+            animations: {
+                self.oib.transform = .identity
+                self.oib.alpha = 1
+            }
+        )
+        UIView.animate(
+            withDuration: 1,
+            delay: 0,
+            options: .curveEaseOut,
+            animations: {
+                self.datepicker.transform = .identity
+                self.datepicker.alpha = 1
+            }
+        )
+        
+        UIView.animate(
+            withDuration: 1,
+            delay: 0,
+            options: .curveEaseOut,
+            animations: {
+                self.dateLabel.transform = .identity
+                self.dateLabel.alpha = 1
+            }
+        )
+        
+        
+    }
     private func buildViews() {
         view.backgroundColor = UIColor(red: 0.49, green: 0.78, blue: 0.94, alpha: 1.00)
         
@@ -48,6 +97,8 @@ class VaccinationScheduleViewController: UIViewController {
         name.leftView = leftView
         name.leftViewMode = .always
         name.font = UIFont.systemFont(ofSize: 20.0)
+        name.transform = name.transform.translatedBy(x: -view.frame.width, y: 0)
+        name.alpha = 0
         
         surname = UITextField()
         surname.backgroundColor = .lightGray
@@ -60,6 +111,8 @@ class VaccinationScheduleViewController: UIViewController {
         surname.leftView = leftView2
         surname.leftViewMode = .always
         surname.font = UIFont.systemFont(ofSize: 20.0)
+        surname.transform = surname.transform.translatedBy(x: -view.frame.width, y: 0)
+        surname.alpha = 0
         
         oib = UITextField()
         oib.backgroundColor = .lightGray
@@ -72,16 +125,23 @@ class VaccinationScheduleViewController: UIViewController {
         oib.leftView = leftView3
         oib.leftViewMode = .always
         oib.font = UIFont.systemFont(ofSize: 20.0)
+        oib.transform = oib.transform.translatedBy(x: -view.frame.width, y: 0)
+        oib.alpha = 0
+        
         
         dateLabel = UILabel()
         dateLabel.text = "Date of birth:"
         dateLabel.textColor = .white
         dateLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        dateLabel.transform = dateLabel.transform.translatedBy(x: -view.frame.width, y: 0)
+        dateLabel.alpha = 0
         
         birthDate = UITextField()
         datepicker = UIDatePicker()
         datepicker.datePickerMode = .date
         birthDate.inputView = datepicker
+        datepicker.transform = datepicker.transform.translatedBy(x: -view.frame.width, y: 0)
+        datepicker.alpha = 0
         
         applyButton = UIButton()
         applyButton.setTitle("Apply", for: .normal)
@@ -90,6 +150,7 @@ class VaccinationScheduleViewController: UIViewController {
         applyButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: 20.0)
         applyButton.setTitleColor(UIColor(red: 0.1608, green: 0.502, blue: 0.7765, alpha: 1.0), for: .normal)
         applyButton.addTarget(self, action: #selector(customAction), for: .touchUpInside)
+        
         
         view.addSubview(titleLabel)
         view.addSubview(name)
